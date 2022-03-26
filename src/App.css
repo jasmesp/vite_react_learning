@@ -13,6 +13,26 @@
   }
 }
 
+.Solar{
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Solar{
+    animation: Solar-spin infinite 2s alternate;
+  }
+}
+@keyframes Solar-spin {
+  from {
+    transform: skew(10deg);
+  }
+  1%{transform:rotate(0deg)}
+  50% {transform: rotate(36deg);}
+  99% {transform: rotate(0deg);}
+  to { transform: skew(-10deg); }
+
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
