@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import solar from '/src/flawless_solar.png'
+import solar from './flawless_solar.png'
 
 function App() {
     const [ count, setCount ] = useState(0)
